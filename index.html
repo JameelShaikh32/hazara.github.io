@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hazara | Family Restaurant & Bar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/95c632aba0.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!---------------------------------------- Header Section ------------------------------>
+    <header id="header">
+        <div class="nav-bar">
+            <nav>
+                <div id="logo">
+                    <h3>Hazara</h3>
+                </div>
+                <div id="nav-menu">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="dark-theme" id="theme1">
+                    <i class="fas fa-moon" onclick="dark()" id="theme-icon"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!---------------------------------------- Home Section ------------------------------>
+    <section id="home">
+        <div class="content">
+            <h1>Hazara</h1>
+            <h4>Family Restaurant & Bar</h4>
+            <p>
+                We serve best food here.
+            </p>
+            <a href="https://www.zomato.com/mumbai/hazara-restaurant-bar-sion/order?utm_medium=o2_widget&utm_campaign=widget-business&utm_source=referral-widget-35636" class="menu-btn">Order Now</a>
+        </div>
+        <div class="home-img">
+            <img src="images/home.png">
+        </div>
+    </section>
+
+    <!---------------------------------------- About Section ------------------------------>
+    <section id="about">
+        <div id="about-img">
+            <img src="images/about.jpg">
+        </div>
+        <div id="details">
+            <h4>About Us</h4><br>
+            <h1>
+                We serve the best<br> tasty food
+            </h1>
+            <p>
+                We cook the best food in the entire city,<br> with excellent customer service, the best meals and at the best price, visit us.
+            </p><br><br><br>
+            <div id="hist" onclick="hist()">
+                View More
+            </div>
+        </div>
+        <div id="history">
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hazara, founded in 1947 by Hukamchand Singh Julka is a hidden gem in Mumbai serving delectable Indian food. Starting from his humble kitchen in Sion-Koliwada, he was instrumental in introducing Mumbai to the famous
+                Prawns and Fish Koliwada - a delightful favorite amongst many. These dishes were first served to guests in 1955 and ever since then have been served to many all over the world. Little did he know then that his humble delicacy would be
+                famous not just in the city but would also make it to the menus of famed restaurants in London and New York. These deep-fried, crunchy dishes are enjoyed till today alongside a glass of chilled beer.
+            </p><br>
+            <div id="hist2" onclick="hist()">
+                View Less
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------------- Menu Section ------------------------------>
+    <section id="menu">
+        <div class="menu-title">
+            <h1>Menu</h1>
+        </div>
+        <div class="slider">
+            <!--
+            <a href="#slide-1" id="tab">Vegetarian</a>
+            <a href="#slide-2" id="tab">Non - Veg</a>
+            <a href="#slide-3" id="tab">Rice & Noodels</a>
+            <a href="#slide-4" id="tab">Sea Foods</a>
+            <a href="#slide-5" id="tab">Soups</a>
+-->
+            <div class="slides">
+                <div id="slide-1">
+                    <!--------------------------------------- Veg ----------------------------------------->
+
+                    <div id="items">
+                        <h4>Paneer Hazara Spl Tikka</h4>
+                        <h4>Rs. 260</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Paneer Chutney Tikka</h4>
+                        <h4>Rs. 240</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Mushroom Tikka</h4>
+                        <h4>Rs. 200</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Paneer Pakora</h4>
+                        <h4>Rs. 200</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Vegetable Seekh Kabab</h4>
+                        <h4>Rs. 180</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Cheese Pakora</h4>
+                        <h4>Rs. 200</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Paneer Tikka</h4>
+                        <h4>Rs. 220</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Paneer Chilly</h4>
+                        <h4>Rs. 190</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Crispy Vegetable</h4>
+                        <h4>Rs. 180</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Vegetable Chilly / Manchurian</h4>
+                        <h4>Rs. 180</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Vegetable Spring Roll</h4>
+                        <h4>Rs. 180</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Vegetable Hara Bhara Kabab</h4>
+                        <h4>Rs. 180</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Paneer Koliwada</h4>
+                        <h4>Rs. 200</h4>
+                    </div>
+                </div>
+
+                <!--------------------------------------- Non Veg ----------------------------------------->
+
+                <div id="slide-2">
+                    <div id="items">
+                        <h4>Chicken Chilly / Manchurian</h4>
+                        <h4>Rs. 240</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Chicken Tandoori Full / Half</h4>
+                        <h4>Rs. 340 / 190</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Chicken Pudina Full / Half</h4>
+                        <h4>Rs. 360 / 210</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Chicken Curd Full / Half</h4>
+                        <h4>Rs. 360 / 210</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Chicken Tangdi Kabab</h4>
+                        <h4>Rs. 260</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Chicken Pahadi Kabab</h4>
+                        <h4>Rs. 230</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Chicken Seekh Kabab</h4>
+                        <h4>Rs. 230</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Chicken Lollypop</h4>
+                        <h4>Rs. 220</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Chicken Tikka</h4>
+                        <h4>Rs. 220</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Mutton Seekh Kabab</h4>
+                        <h4>Rs. 270</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Jhinga Fry</h4>
+                        <h4>Rs. 320</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Rawas Fry</h4>
+                        <h4>Rs. 340</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Prawns Chilly / Manchurian</h4>
+                        <h4>Rs. 240</h4>
+                    </div>
+                </div>
+
+                <!--------------------------------------- Rice & Noodles ----------------------------------------->
+
+                <div id="slide-3">
+                    <div id="items">
+                        <h4>Chicken Fried Rice / Hakka Noodles</h4>
+                        <h4>Rs. 170</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Prawns Fried Rice / Hakka Noodles</h4>
+                        <h4>Rs. 220</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Chicken Schezwan Rice</h4>
+                        <h4>Rs. 190</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Prawns Schezwan Rice</h4>
+                        <h4>Rs. 220</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Chicken Manchurian Rice</h4>
+                        <h4>Rs. 280</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Chicken Triple Schezwan</h4>
+                        <h4>Rs. 300</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Mixed Schezwan Rice</h4>
+                        <h4>Rs. 240</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Egg Fried Rice / Hakka Noodles</h4>
+                        <h4>Rs. 160</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Vegetable Fried Rice</h4>
+                        <h4>Rs. 160</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Vegetable Hakka Noodles</h4>
+                        <h4>Rs. 160</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Vegetable Schezwan Rice</h4>
+                        <h4>Rs. 180</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Prawns Triple Schezwan</h4>
+                        <h4>Rs. 320</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Veg / Non-Veg Combination Rice</h4>
+                        <h4>Rs. 200 / 220</h4>
+                    </div>
+                </div>
+
+                <!--------------------------------------- Sea Foods ----------------------------------------->
+
+                <div id="slide-4">
+                    <div id="items">
+                        <h4>Prawns Schezwan / Hot Garlic</h4>
+                        <h4>Rs. 260</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Prawns Pepper Chily</h4>
+                        <h4>Rs. 260</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Prawns Sweet & Spicy</h4>
+                        <h4>Rs. 280</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Fish Chilly / Manchurian</h4>
+                        <h4>Rs. 280</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Fish Schezwan / Hot Garlic</h4>
+                        <h4>Rs. 300</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Fish Pepper Chilly</h4>
+                        <h4>Rs. 300</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Fish Sweet & Spicy</h4>
+                        <h4>Rs. 300</h4>
+                    </div>
+                </div>
+
+                <!----------------------------------------- Soups ------------------------------------------->
+
+                <div id="slide-5">
+                    <div id="items">
+                        <h4>Sweet Corn Vegetable</h4>
+                        <h4>Rs. 120</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Hot & Sour Vegetable</h4>
+                        <h4>Rs. 120</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Vegetable Manchow</h4>
+                        <h4>Rs. 120</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Sweet Corn Chicken</h4>
+                        <h4>Rs. 130</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Hot & Sour Chicken</h4>
+                        <h4>Rs. 130</h4>
+                    </div>
+                    <div id="items">
+                        <h4>Chicken Manchow</h4>
+                        <h4>Rs. 130</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="foot1">
+            <h3>Hazara</h3>
+            <h4>Restaurant</h4>
+        </div>
+        <div class="foot2">
+            <h5 id="ft1">Copyright 2021</h5>
+            <h5 id="ft2">Reserve Your Table<br>Call Us: +91 2224092617 / +91 2224039429</h5>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
+
+body.dark {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(36, 35, 35);
+    color: whitesmoke;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: whitesmoke;
+    color: rgb(250, 115, 4);
+    display: inline-flex;
+    padding: 5px;
+    position: fixed;
+    border-bottom: 2px;
+    transition: 0.5s;
+}
+
+body.dark header {
+    background-color: rgb(36, 35, 35);
+    color: lightgreen;
+}
+
+header nav {
+    display: flex;
+    margin-left: 80px;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav #logo h3 {
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: linear 0.5s;
+}
+
+header nav #nav-menu {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 500px;
+}
+
+header nav #nav-menu a {
+    text-decoration: none;
+    align-items: center;
+    margin-left: 50px;
+    color: rgb(36, 35, 35);
+    transition: linear 0.5s;
+}
+
+body.dark header nav #nav-menu a {
+    color: whitesmoke;
+}
+
+header nav #nav-menu a:hover {
+    color: rgb(250, 115, 4);
+    transition: all 0.5s ease;
+}
+
+header nav #nav-menu a:active {
+    color: rgb(250, 115, 4);
+}
+
+body.dark header nav #nav-menu a:hover {
+    color: lightgreen;
+    transition: all 0.5s ease;
+}
+
+header nav .dark-theme {
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 70px;
+    padding: 5px;
+}
+
+header nav .dark-theme:hover {
+    color: black;
+    transition: all 1s ease-in-out;
+}
+
+body.dark header nav .dark-theme:hover {
+    color: whitesmoke;
+    transition: all 1s ease-in-out;
+}
+
+
+/* HOME */
+
+#home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-between;
+    transition: linear 0.5s;
+}
+
+#home .home-img img {
+    width: 400px;
+    height: 400px;
+    margin-right: 100px;
+    margin-top: 50px;
+    transition: linear 1s;
+}
+
+#home .content {
+    margin-left: 150px;
+    font-size: 36px;
+}
+
+#home .content h1 {
+    color: rgb(250, 115, 4);
+}
+
+body.dark #home .content h1 {
+    color: lightgreen;
+}
+
+#home .content p {
+    font-size: 20px;
+}
+
+#home .content .menu-btn {
+    width: 200px;
+    height: 100x;
+    background-color: rgb(250, 115, 4);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+    text-decoration: none;
+    transition: linear 0.5s;
+}
+
+body.dark #home .content .menu-btn {
+    background-color: lightgreen;
+    color: rgb(36, 35, 35);
+}
+
+
+/* About */
+
+#about {
+    height: 100vh;
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-between;
+    transition: linear 0.5s;
+}
+
+#about #about-img img {
+    width: 350px;
+    height: 350px;
+    margin-left: 100px;
+    margin-top: 30px;
+    border-radius: 10px;
+    transition: linear 0.5s;
+}
+
+#about #details {
+    margin-right: 150px;
+    margin-top: 150px;
+    height: 500px;
+    width: 500px;
+}
+
+#about #details h4 {
+    color: rgb(250, 115, 4);
+}
+
+#about #details p {
+    color: rgb(119, 119, 118);
+}
+
+body.dark #about #details p {
+    color: rgb(202, 202, 202);
+}
+
+body.dark #about #details h4 {
+    color: lightgreen;
+}
+
+#about #details h1 {
+    font-size: 36px;
+}
+
+#about #history {
+    width: 500px;
+    height: 500px;
+    color: rgb(119, 119, 118);
+    text-align: justify;
+    margin-right: 150px;
+    margin-top: 150px;
+    display: none;
+}
+
+body.dark #about #history {
+    color: rgb(202, 202, 202);
+}
+
+#about #details #hist {
+    width: 150px;
+    height: 100x;
+    background-color: rgb(250, 115, 4);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+body.dark #about #details #hist {
+    background-color: lightgreen;
+    color: rgb(36, 35, 35);
+    transition: all 1s ease;
+}
+
+#about #history #hist2 {
+    width: 150px;
+    height: 100x;
+    background-color: rgb(250, 115, 4);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+}
+
+body.dark #about #history #hist2 {
+    background-color: lightgreen;
+    color: rgb(36, 35, 35);
+    transition: all 1s ease;
+}
+
+
+/* Menu Section */
+
+#menu {
+    padding: 50px;
+}
+
+#menu .menu-title {
+    width: 120px;
+    font-size: 24px;
+    height: 90px;
+    margin-left: 570px;
+    padding: 10px;
+}
+
+.slider {
+    width: 810px;
+    text-align: center;
+    margin-left: 250px;
+}
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    /*
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+    border-radius: 10px;*/
+}
+
+.slides::-webkit-scrollbar {
+    width: 10px;
+    height: 18px;
+}
+
+.slides::-webkit-scrollbar-thumb {
+    background: rgb(250, 115, 4);
+    border-radius: 10px;
+}
+
+body.dark .slides::-webkit-scrollbar-thumb {
+    background: lightgreen;
+    border-radius: 10px;
+}
+
+.slides::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.slides>div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 800px;
+    height: 420px;
+    margin: 5px;
+    padding: 15px;
+    border-radius: 10px 10px 10px 10px;
+    background: rgb(224, 224, 224);
+    /*position: relative;*/
+    font-size: 16px;
+    text-align: left;
+}
+
+.slides>div #items {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+body.dark .slides>div {
+    color: black;
+}
+
+.slider>a {
+    display: inline-flex;
+    width: 150px;
+    height: 50px;
+    background: rgb(250, 115, 4);
+    color: whitesmoke;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    /*position: relative;*/
+}
+
+body.dark .slider>a {
+    background-color: lightgreen;
+    color: rgb(36, 35, 35);
+}
+
+.slider>a :hover {
+    background-color: rgb(36, 35, 35);
+    color: whitesmoke;
+}
+
+.slider>a:focus {
+    background: #000;
+}
+
+body.dark .slider>a:focus {
+    background: whitesmoke;
+}
+
+#menu #order-btn a {
+    display: flex;
+    width: 200px;
+    height: 40px;
+    background: rgb(250, 115, 4);
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 15px;
+    margin-left: 530px;
+}
+
+body.dark #menu #order-btn a {
+    background: lightgreen;
+    color: black;
+}
+
+#menu #order-btn a:focus {
+    background: #000;
+}
+
+body.dark #menu #order-btn a:focus {
+    background: whitesmoke;
+}
+
+#order-btn {
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    background-color: rgb(250, 115, 4);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 550px;
+}
+
+body.dark #order-btn {
+    background-color: lightgreen;
+}
+
+#order-btn a {
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+    padding-left: 5px;
+}
+
+body.dark #order-btn a {
+    color: black;
+}
+
+#contact {
+    height: 150px;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 100px;
+    justify-content: center;
+}
+
+#contact .foot1 h3 {
+    color: rgb(250, 115, 4);
+    font-size: 18px;
+}
+
+body.dark #contact .foot1 h3 {
+    color: lightgreen;
+}
+
+#contact .foot1 h4 {
+    color: rgb(119, 119, 118);
+    font-size: 12px;
+}
+
+#contact .foot2 {
+    display: inline-flex;
+    margin-top: 20px;
+}
+
+#contact .foot2 #ft2 {
+    margin-left: 700px;
+}
