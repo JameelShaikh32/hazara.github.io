@@ -1,8 +1,8 @@
 /* Dark Mode */
 function dark() {
-    const div = document.querySelector(".dark-theme");
+    const mode = document.querySelector(".dark-theme");
 
-    div.addEventListener("click", function() {
+    mode.addEventListener("click", function() {
         document.body.classList.toggle("dark");
         document.getElementsByTagName("I")[0].classList.toggle("fa-sun");
     });
