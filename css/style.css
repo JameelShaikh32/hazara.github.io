@@ -19,12 +19,11 @@ body.dark {
 
 header {
     width: 100%;
-    height: 60px;
+    height: 50px;
     background-color: whitesmoke;
     color: rgb(250, 115, 4);
     display: inline-flex;
     padding: 5px;
-    position: fixed;
     border-bottom: 2px;
     transition: 0.5s;
 }
@@ -34,7 +33,7 @@ body.dark header {
     color: lightgreen;
 }
 
-header nav {
+header .nav-bar nav {
     display: flex;
     margin-left: 80px;
     margin-top: 10px;
@@ -56,6 +55,8 @@ header nav #nav-menu {
 }
 
 header nav #nav-menu a {
+    display: flex;
+    float: left;
     text-decoration: none;
     align-items: center;
     margin-left: 50px;
@@ -98,6 +99,12 @@ body.dark header nav .dark-theme:hover {
     transition: all 1s ease-in-out;
 }
 
+@media screen and (max-width: 600px) {
+    header {
+        display: none;
+    }
+}
+
 
 /* HOME */
 
@@ -105,22 +112,22 @@ body.dark header nav .dark-theme:hover {
     width: 100%;
     height: 100vh;
     display: flex;
-    padding: 50px;
+    padding: 10px;
+    margin: auto auto;
     align-items: center;
     justify-content: space-between;
     transition: linear 0.5s;
 }
 
 #home .home-img img {
+    position: relative;
     width: 400px;
-    height: 400px;
-    margin-right: 100px;
-    margin-top: 50px;
-    transition: linear 1s;
+    height: auto;
 }
 
 #home .content {
-    margin-left: 150px;
+    position: relative;
+    left: 100px;
     font-size: 36px;
 }
 
@@ -154,6 +161,38 @@ body.dark #home .content .menu-btn {
     color: rgb(36, 35, 35);
 }
 
+@media screen and (max-width: 600px) {
+    #home {
+        position: relative;
+        top: 50px;
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        justify-content: center;
+    }
+    #home .content h1 {
+        font-size: 22px;
+    }
+    #home .content h4 {
+        font-size: 16px;
+    }
+    #home .home-img img {
+        position: relative;
+        top: 50px;
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    #home .content {
+        position: relative;
+        left: 10px;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        padding: 10px;
+    }
+}
+
 
 /* About */
 
@@ -168,10 +207,9 @@ body.dark #home .content .menu-btn {
 
 #about #about-img img {
     width: 350px;
-    height: 350px;
+    height: auto;
     margin-left: 100px;
     margin-top: 30px;
-    border-radius: 10px;
     transition: linear 0.5s;
 }
 
@@ -204,7 +242,7 @@ body.dark #about #details h4 {
 
 #about #history {
     width: 500px;
-    height: 500px;
+    height: auto;
     color: rgb(119, 119, 118);
     text-align: justify;
     margin-right: 150px;
@@ -254,6 +292,41 @@ body.dark #about #history #hist2 {
     background-color: lightgreen;
     color: rgb(36, 35, 35);
     transition: all 1s ease;
+}
+
+@media screen and (max-width: 600px) {
+    #about {
+        display: block;
+        padding: 20px;
+    }
+    #about #about-img {
+        padding: 0px;
+        overflow: hidden;
+        word-break: break-all;
+    }
+    #about #about-img img {
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+    }
+    #about #details {
+        position: absolute;
+        width: 95%;
+        font-size: 14px;
+    }
+    #about #details h1 {
+        font-size: 24px;
+    }
+    #about #details p {
+        overflow: hidden;
+    }
+    #about #history p {
+        width: 100%;
+        padding: 10px;
+        overflow: hidden;
+        font-size: 14px;
+        text-align: justify;
+    }
 }
 
 
@@ -445,4 +518,26 @@ body.dark #contact .foot1 h3 {
 
 #contact .foot2 #ft2 {
     margin-left: 700px;
+}
+
+@media screen and (max-width: 600px) {
+    #menu {
+        display: none;
+    }
+    #contact {
+        position: relative;
+        top: 500px;
+        display: block;
+        margin-left: 20px;
+    }
+    #contact .foot2 {
+        display: block;
+        float: left;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    #contact .foot2 #ft2 {
+        margin-left: 0px;
+        padding-top: 5px;
+    }
 }
