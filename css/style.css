@@ -169,12 +169,13 @@ body.dark #home .content .menu-btn {
         width: 100%;
         overflow: hidden;
         justify-content: center;
+        border: 2px solid black;
     }
     #home .content h1 {
-        font-size: 22px;
+        font-size: 36px;
     }
     #home .content h4 {
-        font-size: 16px;
+        font-size: 22px;
     }
     #home .home-img img {
         position: relative;
@@ -185,9 +186,10 @@ body.dark #home .content .menu-btn {
     }
     #home .content {
         position: relative;
-        left: 10px;
+        left: 0px;
         width: 100%;
         height: auto;
+        text-align: center;
         overflow: hidden;
         padding: 10px;
     }
