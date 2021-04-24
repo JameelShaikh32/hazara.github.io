@@ -169,7 +169,6 @@ body.dark #home .content .menu-btn {
         width: 100%;
         overflow: hidden;
         justify-content: center;
-        border: 2px solid black;
     }
     #home .content h1 {
         font-size: 36px;
