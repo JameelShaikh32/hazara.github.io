@@ -100,8 +100,17 @@ body.dark header nav .dark-theme:hover {
 }
 
 @media screen and (max-width: 600px) {
-    header {
+    header .nav-bar nav #logo {
         display: none;
+    }
+    header .nav-bar nav #nav-menu {
+        display: none;
+    }
+    header .nav-bar nav #theme1 {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 20px;
     }
 }
 
